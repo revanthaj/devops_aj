@@ -1,11 +1,10 @@
-trigger: none
+trigger: main
 stages:
- - stage: Build
- jobs:
- - job: BuildJob
+  - stage: Build
+jobs:
+  - job: BuildJob
  pool:
  name: 'revanthagent'
  steps:
- - script: echo "Building the project"
- displayName: 'Build Step'
- - script: echo "good evening"
+   - script: echo "Building the project"
+ 
